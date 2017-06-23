@@ -21,7 +21,7 @@ pdp11monloader - Load binary code into PDP-11 over console monitor.
 
 SYNOPSIS
 
-tu58fs  --help --version --debug --baudrate <baudrate>
+pdp11monloader  --help --version --debug --baudrate <baudrate>
           --format <bits_parity_stop> --port <serial_device> --odt --m9312
           --m9301 --octaltext <inputfile> --macro11listing <inputfile>
           --papertape <inputfile> --go [<start_addr>]
@@ -94,7 +94,7 @@ Option names are case insensitive.
 
 EXAMPLES
 
-sudo ./tu58fs -p /dev/ttyS2 -b 9600 -odt --octaltext pattern.bin
+sudo ./pdp11monloader -p /dev/ttyS2 -b 9600 -odt --octaltext pattern.bin
     The PDP-11 is connected to serial RS232 port "ttyS1" under Linux,
     Baud rate is 9600, data format is "8N1" by default.
     Access to serial line device requires "sudo".
@@ -104,29 +104,29 @@ sudo ./tu58fs -p /dev/ttyS2 -b 9600 -odt --octaltext pattern.bin
     one octal address and one or more octal 16bits words per line.
     The data is loaded into the PDP-11 memory over console "Deposit" commands.
 
-sudo ./tu58fs -p /dev/ttyS2 -b 9600 -odt -ml dd.lst -go 1000 -tty
+sudo ./pdp11monloader -p /dev/ttyS2 -b 9600 -odt -ml dd.lst -go 1000 -tty
     Same PDP-11 and connection as before, booting a TU58 tape device:
-    tu58fs eliminates the need for a Boot ROM.
+    pdp11monloader eliminates the need for a Boot ROM.
 ,    The boot loader code is parsed from MACRO-11 listing file "dd.lst"
     After loading the code program execution is started at address 1000,
     then program switches mode and user can operate the running PDP-11 over a
     simple terminal emulation.
 
-tu58fs.exe -p 1 -b 9600 -odt --macro11listing cxcpag.lst -go 220 -tty
+pdp11monloader.exe -p 1 -b 9600 -odt --macro11listing cxcpag.lst -go 220 -tty
     Call when running under MS Windows, serial port COM1 is used for connection.
     This time the diagnostic CXCPAG is executed at start address 000220.
 
-tu58fs.exe -p 1 -b 9600 -odt -pt DEC-11-AJPB-PB.ptap -go -tty
+pdp11monloader.exe -p 1 -b 9600 -odt -pt DEC-11-AJPB-PB.ptap -go -tty
     Code is loaded from an "Absolute Papertape" image, its the
     "Papertape BASIC" from 1972. Execution is started.
     The program start address is read from paper tape and not given on command line.
 
-tu58fs.exe -p 1 -b 4800 -fmt 7e1 -m9312 -pt DEC-11-AJPB-PB.ptap -go -tty
+pdp11monloader.exe -p 1 -b 4800 -fmt 7e1 -m9312 -pt DEC-11-AJPB-PB.ptap -go -tty
     BASIC is run on an UNIBUS PDP-11, which executes the console monitor from a
     M9312 Boot Terminator card. The DL11 serial console on this PDP-11 is jumpered
     to 38400 baud, serial line format is 7 bit with even parity.
 
-tu58fs.exe -p 7 -b 115200 --usbdelay 7 -m9312 -pt DEC-11-AJPB-PB.ptap -go -tty
+pdp11monloader.exe -p 7 -b 115200 --usbdelay 7 -m9312 -pt DEC-11-AJPB-PB.ptap -go -tty
     As before. An USB-to-RS232 adapter is used, plug'n'play assigns port number COM7.
     The PDP-11 console DL11 hardware is tuned for 115200 baud,
     this USB dongle is FTDI and needs 7 ms extra delay.

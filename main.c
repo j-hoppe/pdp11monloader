@@ -1,6 +1,6 @@
 /* main.c: pdp11monloader user interface, global resources
  *
- * PDP11 code loader over console monitor
+ * PDP-11 code loader over console monitor
  *
  * Copyright (c) 2017, Joerg Hoppe, j_hoppe@t-online.de, www.retrocmp.com
  *

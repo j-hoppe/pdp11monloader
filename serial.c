@@ -37,6 +37,7 @@
  *  Neurobiology. We copyright (C) it and permit its use provided it is not
  *  sold to others. Originally written by Dan Ts'o circa 1984 or so.
  *
+ *  18-Jun-2017 JH  cloned
  *  07-May-2017 JH, Don North  compiles under MACOS, passes GCC warning levels -Wall -Wextra
  *  12-Jan-2017 JH  taken from tu58em
  *

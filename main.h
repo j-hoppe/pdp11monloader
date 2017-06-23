@@ -38,7 +38,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-#define PROGNAME	"tu58fs"
+#define PROGNAME	"pdp11monloader"
 
 #ifndef _MAIN_C_
 // only referenced stuff
