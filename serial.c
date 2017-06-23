@@ -45,7 +45,7 @@
 #define _SERIAL_C_
 
 //
-// TU58 serial support routines
+// Serial support routines
 //
 
 #include <stdio.h>

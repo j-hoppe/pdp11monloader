@@ -458,12 +458,12 @@ int cmd_teletype(serial_device_t *serialdevice, monitor_type_t monitor_type,
 
 	// console is in RAW mode: so do own CR LF
 	fprintf(stdout,
-			"\r\nTU58FS: teletype session to PDP-11 console opened.\r\n");
-	fprintf(stdout, "TU58FS: ^G sound is shown as \"<BEL>\"\r\n");
+			"\r\n"PROGNAME": teletype session to PDP-11 console opened.\r\n");
+	fprintf(stdout, PROGNAME": ^G sound is shown as \"<BEL>\"\r\n");
 	fprintf(stdout,
-			"TU58FS: Terminate teletype session with ^A ^A double key sequence.\r\n");
+			PROGNAME": Terminate teletype session with ^A ^A double key sequence.\r\n");
 	if (userinfo)
-		fprintf(stdout, "TU58FS: %s\r\n", userinfo);
+		fprintf(stdout, PROGNAME": %s\r\n", userinfo);
 	while (!ready) {
 		int status;
 		fd_set readfds;
