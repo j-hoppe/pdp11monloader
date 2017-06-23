@@ -288,7 +288,7 @@ static void parse_commandline(int argc, char **argv) {
 			"After operation a simple line based terminal remains active on the serial port,\n"
 					"so you can operate the PDP-11 over serial console immediately.\n"
 					"If not used after \"go\" you have to start a more comfortable terminal emulator\n"
-					"and will probaply loose some output of the started program.",
+					"and will probably loose some output of the started program.",
 			NULL, NULL, NULL, NULL);
 
 	getopt_def(&getopt_parser, "ud", "usbdelay", "milliseconds", NULL, NULL,

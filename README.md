@@ -83,7 +83,7 @@ pdp11monloader  --help --version --debug --baudrate <baudrate>
           After operation a simple line based terminal remains active on the serial port,
           so you can operate the PDP-11 over serial console immediately.
           If not used after "go" you have to start a more comfortable terminal emulator
-          and will probaply loose some output of the started program.
+          and will probably loose some output of the started program.
 -ud    | --usbdelay <milliseconds>
           Specifies extra delay for console monitor protocol.
           Some USB-RS232 adapters have large delays when polling input (for example FTDIs).
