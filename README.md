@@ -7,7 +7,7 @@ is implemented.
 Several code file formats are supported, and several PDP-11 types can be controlled.
 
 pdp11monloader is a Linux command line tool written in C.
-It can also compiled under CYGWIN to run on MS_Windows, in this the support file "cygwin.dll"
+It can also compiled under CYGWIN to run on MS-Windows, in this the support file "cygwin.dll"
 is needed.
 
 The commandline syntax is:
@@ -130,4 +130,9 @@ pdp11monloader.exe -p 7 -b 115200 --usbdelay 7 -m9312 -pt DEC-11-AJPB-PB.ptap -g
     As before. An USB-to-RS232 adapter is used, plug'n'play assigns port number COM7.
     The PDP-11 console DL11 hardware is tuned for 115200 baud,
     this USB dongle is FTDI and needs 7 ms extra delay.
-```
+
+SEE ALSO
+
+    Online docs: www.retrocmp.com/tools/pdp11monloader
+    Repository: https://github.com/j-hoppe/pdp11monloader
+    Contact: j_hoppe@t-online.de
