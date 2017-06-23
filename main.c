@@ -118,7 +118,7 @@ static char * examples[] =
 				"\n",
 				"sudo ./" PROGNAME " -p /dev/ttyS2 -b 9600 -odt -ml dd.lst -go 1000 -tty\n", //
 				"    Same PDP-11 and connection as before, booting a TU58 tape device:\n",
-				"    "PROGNAME" eliminates the need for a Boot ROM.\n,"
+				"    "PROGNAME" eliminates the need for a Boot ROM.\n"
 				"    The boot loader code is parsed from MACRO-11 listing file \"dd.lst\"\n",
 				"    After loading the code program execution is started at address 1000,\n",
 				"    then program switches mode and user can operate the running PDP-11 over a\n",

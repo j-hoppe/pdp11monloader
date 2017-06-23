@@ -107,7 +107,7 @@ sudo ./pdp11monloader -p /dev/ttyS2 -b 9600 -odt --octaltext pattern.bin
 sudo ./pdp11monloader -p /dev/ttyS2 -b 9600 -odt -ml dd.lst -go 1000 -tty
     Same PDP-11 and connection as before, booting a TU58 tape device:
     pdp11monloader eliminates the need for a Boot ROM.
-,    The boot loader code is parsed from MACRO-11 listing file "dd.lst"
+    The boot loader code is parsed from MACRO-11 listing file "dd.lst"
     After loading the code program execution is started at address 1000,
     then program switches mode and user can operate the running PDP-11 over a
     simple terminal emulation.
