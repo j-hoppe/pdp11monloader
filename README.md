@@ -25,7 +25,7 @@ pdp11monloader  --help --version --debug --baudrate <baudrate>
           --format <bits_parity_stop> --port <serial_device> --odt --m9312
           --m9301 --octaltext <inputfile> --macro11listing <inputfile>
           --papertape <inputfile> --go [<start_addr>]
-          --gocomitted [<start_addr>] --tty [<start_addr>]
+          --gocomitted [<start_addr>] --tty
           --usbdelay <milliseconds>
 
 -?     | --help
@@ -79,7 +79,7 @@ pdp11monloader  --help --version --debug --baudrate <baudrate>
           User types a single "G" to start and no output is lost
           Simple example:  -gc
               Start program execution at address set by papertape file (if any)
--t     | --tty [<start_addr>]
+-t     | --tty
           After operation a simple line based terminal remains active on the serial port,
           so you can operate the PDP-11 over serial console immediately.
           If not used after "go" you have to start a more comfortable terminal emulator

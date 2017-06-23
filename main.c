@@ -284,7 +284,7 @@ static void parse_commandline(int argc, char **argv) {
 			"Start program execution at address set by papertape file (if any)",
 			NULL, NULL);
 
-	getopt_def(&getopt_parser, "t", "tty", NULL, "start_addr", NULL,
+	getopt_def(&getopt_parser, "t", "tty", NULL, NULL, NULL,
 			"After operation a simple line based terminal remains active on the serial port,\n"
 					"so you can operate the PDP-11 over serial console immediately.\n"
 					"If not used after \"go\" you have to start a more comfortable terminal emulator\n"
