@@ -133,6 +133,6 @@ pdp11monloader.exe -p 7 -b 115200 --usbdelay 7 -m9312 -pt DEC-11-AJPB-PB.ptap -g
 
 SEE ALSO
 
-    Online docs: www.retrocmp.com/tools/pdp11monloader
-    Repository: https://github.com/j-hoppe/pdp11monloader
-    Contact: j_hoppe@t-online.de
+Online docs: www.retrocmp.com/tools/pdp11monloader
+Repository: https://github.com/j-hoppe/pdp11monloader
+Contact: j_hoppe@t-online.de

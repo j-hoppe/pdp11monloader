@@ -164,14 +164,14 @@ void help() {
 	for (s = examples; *s; s++)
 		fputs(*s, ferr);
 	fprintf(ferr, "\n");
-	/*
+
 	 fprintf(ferr, "SEE ALSO\n");
 	 fprintf(ferr, "\n");
 	 fprintf(ferr, "Online docs: www.retrocmp.com/tools/pdp11monloader \n");
 	 fprintf(ferr, "Repository: https://github.com/j-hoppe/pdp11monloader\n");
 	 fprintf(ferr, "Contact: j_hoppe@t-online.de\n");
 	 fprintf(ferr, "\n");
-	 */
+
 	exit(1);
 }
 
