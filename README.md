@@ -49,14 +49,13 @@ pdp11monloader  --help --version --debug --baudrate <baudrate>
           Set PDP-11 console monitor type to "ODT", for all QBUS machines
 -m9312 | --m9312
           Set PDP-11 console monitor type to "M9312".
-          This BOOT-terminator card is used on many UNIBUS machines
-          and is also build into the 11/44.
+          This BOOT-terminator card is used on many UNIBUS machines.
 -m9301 | --m9301
           Older variant of M9312 BOOT terminator.
 -ot    | --octaltext <inputfile>
           Input file is interpreted as text file containing octal address and data words.
           Words made of characters '0' to '7', all other chars are interpreted as white space.
-          First words in each text line is address, next words are data.
+          First word in each text line is the address, next words are data.
           For example, the "octaltext" format allows to read SimH "deposit" scripts.
           Simple example:  -ot hello.txt
               load memory from hello.txt
